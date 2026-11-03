@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BuildWise — Ton assistant PC</title>
+<style>
+:root{--bg:#0d1119;--panel:#171e2b;--panel2:#202a3b;--line:#303d51;--text:#f3f6fb;--muted:#aab6c8;--green:#62e6a7;--green2:#36c98a;--blue:#86a9ff;--danger:#ff9b9b}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:radial-gradient(ellipse at top,#172b2c 0,#0d1119 48%);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text)}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 6%;background:#111722ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.brand{font-size:27px;font-weight:850;letter-spacing:-1px}.brand span{color:var(--green)}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{color:var(--muted);font-size:14px}.navlinks a:hover{color:var(--green)}.hero{max-width:1100px;margin:auto;padding:76px 24px 54px;text-align:center}.eyebrow{color:var(--green);font-size:12px;letter-spacing:3px;font-weight:800}.hero h1{font-size:clamp(36px,6vw,64px);line-height:1.05;letter-spacing:-2px;margin:18px 0}.hero h1 span{color:var(--green)}.hero p{max-width:700px;margin:0 auto 26px;color:var(--muted);line-height:1.8}.btn{border:0;border-radius:10px;padding:13px 18px;background:var(--green);color:#09120f;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn:hover{background:var(--green2)}.btn.secondary{background:#273449;color:var(--text);border:1px solid var(--line)}.btn.small{padding:9px 12px;font-size:13px}.wrap{max-width:1120px;margin:auto;padding:0 22px 60px}.section{padding:34px 0 12px}.sectionhead{text-align:center;margin-bottom:25px}.sectionhead h2{font-size:30px;margin:0 0 9px}.sectionhead p{color:var(--muted);margin:0;line-height:1.7}.tabs{display:flex;gap:9px;flex-wrap:wrap;justify-content:center;margin:24px 0}.tab{background:var(--panel);color:var(--muted);border:1px solid var(--line);padding:10px 14px;border-radius:10px}.tab.active{background:#18362e;border-color:var(--green);color:var(--green)}.panel{background:linear-gradient(145deg,#192231,#141a25);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 16px 45px #0002}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.field{margin:0 0 17px}.field label{display:block;margin-bottom:8px;font-size:14px;font-weight:750}.field input,.field select,.field textarea{width:100%;background:#0e1520;border:1px solid var(--line);border-radius:9px;padding:12px;color:var(--text);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green)}.help{font-size:12px;color:var(--muted);line-height:1.5;margin-top:6px}.result{margin-top:20px;padding:19px;border-radius:13px;background:#0e1820;border:1px solid #2f5749;line-height:1.7}.result h3{margin:0 0 10px;color:var(--green)}.result ul{padding-left:20px}.muted{color:var(--muted)}.tag{display:inline-block;padding:5px 9px;border-radius:99px;background:#243246;color:#d7e1f0;font-size:12px;margin:3px}.price{font-size:25px;font-weight:850;color:var(--green)}.feature{padding:20px;background:var(--panel);border:1px solid var(--line);border-radius:14px}.feature .icon{font-size:25px}.feature h3{margin:10px 0 7px}.feature p{color:var(--muted);line-height:1.65;font-size:14px;margin:0}.component{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.component:last-child{border:0}.component b{font-size:14px}.component span{color:var(--muted);text-align:right;font-size:13px}.note{font-size:12px;color:var(--muted);line-height:1.6}.two-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.hidden{display:none!important}.status{color:var(--green);font-weight:700}footer{text-align:center;padding:28px 20px;border-top:1px solid var(--line);background:#111722;color:var(--muted);font-size:13px}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.grid,.grid3{grid-template-columns:1fr}.hero{padding-top:54px}.panel{padding:18px}.sectionhead h2{font-size:25px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home">BuildWise<span>.</span></a>
+  <nav class="navlinks">
+    <a href="#builder">PC Builder</a><a href="#compare">SmartPrice</a><a href="#upgrade">Upgrade</a><a href="#fps">FPS</a><a href="#doctor">PC Doctor</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="eyebrow">TON ASSISTANT PC INTELLIGENT</div>
+  <h1>Choisis mieux.<br><span>Construis malin.</span></h1>
+  <p>BuildWise t'aide à réfléchir à une configuration PC selon ton budget, tes jeux et tes besoins. Compare des idées, prépare une mise à niveau et découvre les points à vérifier avant d'acheter.</p>
+  <a class="btn" href="#builder">Créer ma configuration <span>→</span></a>
+  <div class="tabs" aria-label="Fonctionnalités">
+    <a class="tab" href="#builder">🧩 PC Builder</a><a class="tab" href="#compare">⚖️ SmartPrice</a><a class="tab" href="#upgrade">⬆️ Upgrade Path</a><a class="tab" href="#fps">🎮 FPS Range</a><a class="tab" href="#bottleneck">🔍 Bottleneck</a><a class="tab" href="#doctor">🛠️ PC Doctor</a><a class="tab" href="#goal">🎯 GoalMatch</a>
+  </div>
+</section>
+
+<div class="wrap">
+<section class="section" id="builder">
+ <div class="sectionhead"><h2>🧩 PC Builder</h2><p>Décris ton projet et reçois une première orientation adaptée.</p></div>
+ <div class="panel">
+  <div class="grid">
+   <div>
+    <div class="field"><label for="budget">Budget total (DA)</label><input id="budget" type="number" min="1" value="180000"></div>
+    <div class="field"><label for="usage">Utilisation principale</label><select id="usage"><option value="gaming">Gaming</option><option value="study">Études / bureautique</option><option value="creation">Montage vidéo / 3D</option><option value="mixed">Gaming + création</option></select></div>
+    <div class="field"><label for="resolution">Résolution visée</label><select id="resolution"><option>1080p</option><option>1440p</option><option>4K</option></select></div>
+    <div class="field"><label for="priority">Priorité</label><select id="priority"><option value="value">Meilleur rapport qualité/prix</option><option value="fps">FPS élevés</option><option value="quiet">Silence et températures</option><option value="upgrade">Évolutivité</option></select></div>
+    <button class="btn" onclick="buildPC()">Proposer une orientation</button>
+   </div>
+   <div>
+    <div class="result" id="builderResult"><h3>Ta configuration apparaîtra ici</h3><p class="muted">Les conseils ci-dessous sont des orientations, pas une liste de prix en direct.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="compare">
+ <div class="sectionhead"><h2>⚖️ SmartPrice</h2><p>Compare deux configurations selon le budget estimé et les composants.</p></div>
+ <div class="panel">
+  <div class="grid">
+   <div><h3>Configuration A</h3><div class="field"><label>Prix total (DA)</label><input id="priceA" type="number" value="160000"></div><div class="field"><label>Carte graphique</label><select id="gpuA"><option value="1">Entrée de gamme</option><option value="2" selected>Milieu de gamme</option><option value="3">Haut de gamme</option></select></div><div class="field"><label>Processeur</label><select id="cpuA"><option value="1">Entrée de gamme</option><option value="2" selected>Milieu de gamme</option><option value="3">Haut de gamme</option></select></div></div>
+   <div><h3>Configuration B</h3><div class="field"><label>Prix total (DA)</label><input id="priceB" type="number" value="180000"></div><div class="field"><label>Carte graphique</label><select id="gpuB"><option value="1">Entrée de gamme</option><option value="2">Milieu de gamme</option><option value="3" selected>Haut de gamme</option></select></div><div class="field"><label>Processeur</label><select id="cpuB"><option value="1">Entrée de gamme</option><option value="2" selected>Milieu de gamme</option><option value="3">Haut de gamme</option></select></div></div>
+  </div>
+  <button class="btn" onclick="comparePC()">Comparer</button><div class="result hidden" id="compareResult"></div>
+  <p class="note">Le score est un modèle pédagogique simplifié basé uniquement sur les choix saisis. Il ne représente pas des benchmarks réels.</p>
+ </div>
+</section>
+
+<section class="section" id="upgrade">
+ <div class="sectionhead"><h2>⬆️ Upgrade Path</h2><p>Organise les améliorations de ton PC sans tout remplacer d'un coup.</p></div>
+ <div class="panel">
+  <div class="grid">
+   <div class="field"><label>Budget disponible pour l'upgrade (DA)</label><input id="upgradeBudget" type="number" value="50000"></div>
+   <div class="field"><label>Limitation actuelle</label><select id="limitation"><option value="gpu">Jeux : carte graphique limitée</option><option value="ram">Manque de RAM / applications lentes</option><option value="storage">Stockage trop petit ou lent</option><option value="cpu">Processeur souvent à 100 %</option><option value="unknown">Je ne sais pas encore</option></select></div>
+  </div>
+  <button class="btn" onclick="upgradePlan()">Préparer mon plan</button><div class="result hidden" id="upgradeResult"></div>
+ </div>
+</section>
+
+<section class="section" id="fps">
+ <div class="sectionhead"><h2>🎮 FPS Range</h2><p>Prépare une estimation indicative, sans inventer une mesure exacte.</p></div>
+ <div class="panel">
+  <div class="grid">
+   <div class="field"><label>Jeu</label><select id="game"><option>Fortnite</option><option>Counter-Strike 2</option><option>Rocket League</option><option>Cyberpunk 2077</option><option>Minecraft</option></select></div>
+   <div class="field"><label>Carte graphique</label><select id="fpsGpu"><option value="entry">Entrée de gamme</option><option value="mid" selected>Milieu de gamme</option><option value="high">Haut de gamme</option></select></div>
+   <div class="field"><label>Résolution</label><select id="fpsRes"><option>1080p</option><option>1440p</option><option>4K</option></select></div>
+   <div class="field"><label>Réglages</label><select id="settings"><option value="low">Compétitif / faible</option><option value="medium" selected>Moyen</option><option value="high">Élevé / ultra</option></select></div>
+  </div>
+  <button class="btn" onclick="estimateFPS()">Comprendre les facteurs FPS</button><div class="result hidden" id="fpsResult"></div>
+  <p class="note">Cette version n'affiche pas de nombre de FPS inventé. Pour donner des plages chiffrées, il faudra ajouter des résultats de benchmarks vérifiés pour chaque GPU, jeu, résolution et réglage.</p>
+ </div>
+</section>
+
+<section class="section" id="bottleneck">
+ <div class="sectionhead"><h2>🔍 Bottleneck Explainer</h2><p>Comprends quel composant peut limiter les performances.</p></div>
+ <div class="panel">
+  <div class="grid">
+   <div class="field"><label>Utilisation</label><select id="bnUse"><option value="gaming">Gaming</option><option value="render">Rendu / création</option><option value="multi">Multitâche</option></select></div>
+   <div class="field"><label>Composant qui semble saturer</label><select id="bnPart"><option value="gpu">GPU souvent proche de 100 %</option><option value="cpu">CPU souvent proche de 100 %</option><option value="ram">RAM presque pleine</option><option value="disk">Disque très sollicité</option><option value="none">Je ne sais pas</option></select></div>
+  </div>
+  <button class="btn" onclick="explainBottleneck()">Expliquer le résultat</button><div class="result hidden" id="bnResult"></div>
+  <p class="note">Un seul chiffre de pourcentage ne suffit pas pour diagnostiquer un bottleneck : observe les usages pendant le jeu ou l'application.</p>
+ </div>
+</section>
+
+<section class="section" id="doctor">
+ <div class="sectionhead"><h2>🛠️ PC Doctor</h2><p>Choisis un symptôme pour obtenir des vérifications simples et prudentes.</p></div>
+ <div class="panel">
+  <div class="grid">
+   <div class="field"><label>Problème rencontré</label><select id="symptom"><option value="fps">Chute de FPS / saccades</option><option value="heat">Températures élevées</option><option value="slow">PC lent au démarrage</option><option value="noise">Ventilateurs bruyants</option><option value="crash">Crashs / écran bleu</option><option value="wifi">Problème de connexion Wi-Fi</option></select></div>
+   <div class="field"><label>Quand cela arrive-t-il ?</label><select id="when"><option>Tout le temps</option><option>Seulement en jeu</option><option>Après quelques minutes</option><option>Après une mise à jour</option></select></div>
+  </div>
+  <button class="btn" onclick="diagnose()">Afficher les vérifications</button><div class="result hidden" id="doctorResult"></div>
+ </div>
+</section>
+
+<section class="section" id="goal">
+ <div class="sectionhead"><h2>🎯 GoalMatch</h2><p>Pars de ton objectif pour choisir les priorités du PC.</p></div>
+ <div class="panel">
+  <div class="grid">
+   <div class="field"><label>Budget (DA)</label><input id="goalBudget" type="number" value="150000"></div>
+   <div class="field"><label>Objectif</label><select id="goalUse"><option value="esport">Jeux compétitifs et FPS élevés</option><option value="aaa">Jeux récents en belle qualité</option><option value="creator">Montage vidéo / 3D</option><option value="school">Études, programmation, bureautique</option></select></div>
+   <div class="field"><label>Résolution</label><select id="goalRes"><option>1080p</option><option>1440p</option><option>4K</option></select></div>
+   <div class="field"><label>Objectif de fluidité</label><select id="goalFps"><option>60 FPS</option><option>120 FPS</option><option>144+ FPS</option></select></div>
+  </div>
+  <button class="btn" onclick="goalMatch()">Trouver mes priorités</button><div class="result hidden" id="goalResult"></div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="sectionhead"><h2>BuildWise, étape par étape</h2><p>Le prototype est fonctionnel côté navigateur. Les données réelles seront ajoutées ensuite.</p></div>
+ <div class="grid3">
+  <article class="feature"><div class="icon">🧩</div><h3>Configurer</h3><p>Définir les besoins et le budget avant de choisir les pièces.</p></article>
+  <article class="feature"><div class="icon">📊</div><h3>Comparer</h3><p>Évaluer les compromis entre prix, CPU, GPU et usage.</p></article>
+  <article class="feature"><div class="icon">🛠️</div><h3>Diagnostiquer</h3><p>Suivre des étapes de dépannage compréhensibles pour débutants.</p></article>
+ </div>
+</section>
+</div>
+</main>
+<footer>BuildWise © 2026 · Prototype étudiant · Les conseils ne remplacent pas les vérifications de compatibilité et de prix.</footer>
+
+<script>
+function showResult(id,html){const el=document.getElementById(id);el.innerHTML=html;el.classList.remove('hidden');}
+function formatDA(n){return Number(n).toLocaleString('fr-FR')+' DA';}
+function buildPC(){
+ const budget=Number(document.getElementById('budget').value), usage=document.getElementById('usage').value, res=document.getElementById('resolution').value, priority=document.getElementById('priority').value;
+ if(!Number.isFinite(budget)||budget<=0){showResult('builderResult','<h3>Budget invalide</h3><p>Entre un budget supérieur à zéro.</p>');return;}
+ let cpu='Processeur polyvalent récent',gpu='Carte graphique adaptée à la résolution',ram='16 Go minimum, 32 Go utiles pour la création',storage='SSD NVMe 1 To si le budget le permet';
+ if(usage==='study'){gpu='Graphismes intégrés ou carte graphique simple selon les logiciels';ram='16 Go de RAM';}
+ if(usage==='creation'){cpu='Processeur avec plusieurs cœurs performants';gpu='Carte graphique adaptée aux logiciels utilisés';ram='32 Go de RAM recommandés si le budget le permet';storage='SSD NVMe 1 To ou plus';}
+ if(res==='1440p'){gpu='Carte graphique plus performante, adaptée au 1440p';}
+ if(res==='4K'){gpu='Carte graphique haut de gamme : vérifie des benchmarks 4K avant achat';}
+ let pr=priority==='fps'?'Priorité : carte graphique et processeur équilibrés, écran à fréquence élevée.':priority==='quiet'?'Priorité : boîtier bien ventilé, refroidissement de qualité et composants à consommation raisonnable.':priority==='upgrade'?'Priorité : carte mère évolutive, alimentation de qualité et marge pour de futurs composants.':'Priorité : répartir le budget entre GPU, CPU, RAM, SSD, alimentation et boîtier.';
+ showResult('builderResult',`<h3>Orientation de ta configuration</h3><div class="price">${formatDA(budget)}</div><p><span class="tag">${usage==='gaming'?'Gaming':usage==='study'?'Études':usage==='creation'?'Création':'Mixte'}</span><span class="tag">${res}</span></p><div class="component"><b>Processeur</b><span>${cpu}</span></div><div class="component"><b>Carte graphique</b><span>${gpu}</span></div><div class="component"><b>Mémoire RAM</b><span>${ram}</span></div><div class="component"><b>Stockage</b><span>${storage}</span></div><p>${pr}</p><p class="note">Ce sont des priorités, pas une liste de pièces ni un devis. Avant l'achat, il faudra vérifier les prix algériens, le socket CPU, le type de RAM, l'alimentation et les dimensions du boîtier.</p>`);
+}
+function comparePC(){
+ const pa=Number(document.getElementById('priceA').value),pb=Number(document.getElementById('priceB').value),ga=Number(document.getElementById('gpuA').value),gb=Number(document.getElementById('gpuB').value),ca=Number(document.getElementById('cpuA').value),cb=Number(document.getElementById('cpuB').value);
+ if(pa<=0||pb<=0){showResult('compareResult','<h3>Prix invalide</h3><p>Entre deux prix supérieurs à zéro.</p>');return;}
+ const sa=(ga*0.7+ca*0.3)/pa,sb=(gb*0.7+cb*0.3)/pb,w=sa>sb?'A':sb>sa?'B':'A et B sont équivalentes selon ce modèle';
+ showResult('compareResult',`<h3>Comparaison indicative</h3><p>Configuration A : <b>${formatDA(pa)}</b> · score simplifié ${(sa*100000).toFixed(2)}</p><p>Configuration B : <b>${formatDA(pb)}</b> · score simplifié ${(sb*100000).toFixed(2)}</p><p><b>Selon ce modèle simplifié :</b> ${w==='A et B sont équivalentes selon ce modèle'?w:'la configuration '+w+' a le meilleur score prix/composants.'}</p><p class="note">Le classement change selon les jeux et logiciels. Remplace les catégories par des modèles exacts et des benchmarks vérifiés avant d'en tirer une conclusion.</p>`);
+}
+function upgradePlan(){
+ const b=Number(document.getElementById('upgradeBudget').value),l=document.getElementById('limitation').value;if(b<=0){showResult('upgradeResult','<h3>Budget invalide</h3><p>Entre un budget positif.</p>');return;}
+ const data={gpu:['1. Vérifie l’usage GPU en jeu et la résolution.','Compare les cartes graphiques qui rentrent dans ton budget.','Vérifie la puissance et les connecteurs de l’alimentation.'],ram:['Vérifie la consommation RAM dans le Gestionnaire des tâches.','Vérifie les barrettes installées, les slots disponibles et la compatibilité.','Compare un kit compatible plutôt que d’acheter au hasard.'],storage:['Vérifie l’espace libre et le type de disque.','Priorise un SSD si le PC utilise encore un HDD comme disque système.','Vérifie le format et l’interface compatibles.'],cpu:['Vérifie si le CPU reste saturé pendant les tâches concernées.','Consulte la liste de compatibilité CPU de la carte mère et le BIOS.','Compare le gain attendu avant d’acheter.'],unknown:['Observe les usages CPU, GPU, RAM et disque pendant le problème.','Vérifie les températures et les tâches en arrière-plan.','N’achète rien avant d’avoir identifié la limitation.']};
+ showResult('upgradeResult',`<h3>Plan d'upgrade avec ${formatDA(b)}</h3><ul>${data[l].map(x=>'<li>'+x+'</li>').join('')}</ul><p class="note">Garde une réserve pour les frais imprévus. Ces étapes n'incluent pas de prix de pièces en direct.</p>`);
+}
+function estimateFPS(){
+ const game=document.getElementById('game').value,gpu=document.getElementById('fpsGpu').value,res=document.getElementById('fpsRes').value,set=document.getElementById('settings').value;
+ const tips=[];
+ if(res==='1440p')tips.push('Le 1440p demande davantage de puissance GPU que le 1080p.');
+ if(res==='4K')tips.push('Le 4K augmente fortement la charge graphique.');
+ if(set==='high')tips.push('Les réglages élevés peuvent réduire les FPS, surtout avec ray tracing.');
+ if(set==='low')tips.push('Les réglages compétitifs peuvent augmenter les FPS, mais le CPU peut devenir la limite.');
+ if(gpu==='entry')tips.push('Avec un GPU d’entrée de gamme, envisage des réglages faibles ou moyens selon le jeu.');
+ if(gpu==='high')tips.push('Un GPU haut de gamme aide, mais le processeur et les paramètres comptent aussi.');
+ tips.push('Pour chiffrer les FPS, il faut un benchmark du modèle exact de GPU, du CPU, du jeu, de la résolution et des réglages.');
+ showResult('fpsResult',`<h3>Facteurs pour ${game}</h3><p>Profil sélectionné : ${gpu==='entry'?'GPU entrée de gamme':gpu==='mid'?'GPU milieu de gamme':'GPU haut de gamme'} · ${res} · ${set==='low'?'faible/compétitif':set==='medium'?'moyen':'élevé/ultra'}.</p><ul>${tips.map(t=>'<li>'+t+'</li>').join('')}</ul><p class="note">BuildWise n'affiche volontairement pas de nombre de FPS non vérifié.</p>`);
+}
+function explainBottleneck(){
+ const u=document.getElementById('bnUse').value,p=document.getElementById('bnPart').value;
+ const d={gpu:'Si le GPU est souvent proche de 95–100 % pendant le jeu, la limite peut être graphique. Baisser la résolution ou les effets permet de tester cette hypothèse.',cpu:'Si un ou plusieurs cœurs CPU sont saturés alors que le GPU n’est pas pleinement utilisé, le processeur ou le moteur du jeu peut limiter les FPS.',ram:'Une RAM presque pleine peut provoquer des ralentissements lorsque le système utilise le fichier d’échange. Vérifie les applications ouvertes et la capacité installée.',disk:'Une activité disque élevée peut accompagner les chargements ou les saccades. Vérifie l’espace libre, l’état du disque et les applications qui y accèdent.',none:'Mesure CPU, GPU, RAM et disque pendant le problème avec le Gestionnaire des tâches ou un outil de monitoring fiable.'};
+ showResult('bnResult',`<h3>Interprétation</h3><p>${d[p]}</p><p>${u==='gaming'?'En jeu, compare aussi les FPS et les frametimes.':u==='render'?'En rendu, le composant limitant dépend du logiciel et du moteur de rendu.':'En multitâche, surveille surtout la RAM, le CPU et l’activité disque.'}</p><p class="note">Un bottleneck dépend de la tâche et des réglages. Il n’existe pas de pourcentage universel fiable pour chaque duo CPU/GPU.</p>`);
+}
+function diagnose(){
+ const s=document.getElementById('symptom').value,w=document.getElementById('when').value;
+ const d={fps:['Vérifie les températures CPU/GPU et leur utilisation pendant le jeu.','Mets à jour les pilotes depuis les sites officiels.','Teste un réglage graphique plus bas et ferme les applications inutiles.'],heat:['Vérifie que les entrées/sorties d’air ne sont pas bloquées.','Observe les températures au repos et en charge avec un outil fiable.','Nettoyage interne : éteins et débranche le PC ; si tu n’es pas sûr, demande de l’aide.'],slow:['Désactive seulement les applications de démarrage inutiles.','Vérifie l’espace libre du disque et les mises à jour.','Analyse les processus gourmands dans le Gestionnaire des tâches.'],noise:['Identifie si le bruit vient d’un ventilateur ou d’un disque.','Vérifie la poussière et les câbles proches des ventilateurs, PC éteint et débranché.','Un bruit de grincement ou de cliquetis persistant mérite une inspection.'],crash:['Note le code d’erreur et le moment où le crash arrive.','Installe les mises à jour système et pilotes depuis les sources officielles.','Si le problème a commencé après un changement matériel, vérifie les branchements et la stabilité.'],wifi:['Redémarre le routeur et le PC.','Vérifie le mode avion, le pilote Wi-Fi et teste un autre réseau.','Compare le Wi-Fi et Ethernet pour isoler la source du problème.']};
+ showResult('doctorResult',`<h3>Checklist de dépannage</h3><p><span class="tag">Symptôme choisi</span><span class="tag">${w}</span></p><ol>${d[s].map(x=>'<li>'+x+'</li>').join('')}</ol><p class="note">Ne démonte pas un appareil branché. Évite de modifier les tensions ou le BIOS sans comprendre les conséquences.</p>`);
+}
+function goalMatch(){
+ const b=Number(document.getElementById('goalBudget').value),u=document.getElementById('goalUse').value,r=document.getElementById('goalRes').value,f=document.getElementById('goalFps').value;
+ if(b<=0){showResult('goalResult','<h3>Budget invalide</h3><p>Entre un budget positif.</p>');return;}
+ let priorities=u==='esport'?['Privilégie un processeur solide pour les FPS élevés.','Une carte graphique adaptée et un écran à fréquence élevée comptent.']:u==='aaa'?['Priorise la carte graphique pour les jeux récents.','Vérifie les benchmarks du jeu et les réglages visés.']:u==='creator'?['Priorise CPU, RAM et GPU selon les logiciels utilisés.','Vérifie les exigences de tes applications de création.']:['Privilégie un PC équilibré, fiable et évolutif.','16 Go de RAM et un SSD sont un point de départ courant.'];
+ priorities.push(`Résolution : ${r}. Objectif : ${f}. Plus la résolution et les FPS visés augmentent, plus il faut vérifier des benchmarks concrets.`);
+ showResult('goalResult',`<h3>Ton profil GoalMatch</h3><p class="price">${formatDA(b)}</p><ul>${priorities.map(x=>'<li>'+x+'</li>').join('')}</ul><p class="note">C’est une liste de priorités, pas encore une sélection de composants avec prix vérifiés.</p>`);
+}
+</script>
+</body>
+</html>
